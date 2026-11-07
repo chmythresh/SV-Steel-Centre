@@ -17,6 +17,7 @@ Established in 1989, Sri Venkateswara Steel Centre is a premier flat steel distr
 - **Styling:** Tailwind CSS v4 + Stitch Design System Tokens
 - **Icons:** Material Symbols Outlined + Lucide React
 - **Routing:** React Router v7
+- **live link** (https://sv-steel-centre.vercel.app/)
 
 ## 📦 Getting Started
 
