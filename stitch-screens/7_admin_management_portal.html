@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed-variant":"#3d4852","on-tertiary":"#ffffff","inverse-primary":"#bac7e3","on-primary":"#ffffff","surface-container-low":"#f0f3ff","on-primary-container":"#79859f","primary":"#00020b","on-primary-fixed-variant":"#3b475e","on-secondary-fixed":"#011c37","error":"#ba1a1a","secondary-container":"#c4dcff","surface-variant":"#d6e3fe","tertiary-fixed-dim":"#bdc8d4","surface-container-high":"#dee8ff","primary-fixed":"#d6e3ff","tertiary-fixed":"#d9e4f0","on-error-container":"#93000a","surface-dim":"#cddaf5","secondary-fixed":"#d3e4ff","inverse-surface":"#243145","primary-container":"#101d32","background":"#f9f9ff","secondary":"#49607e","on-background":"#0e1c2f","secondary-fixed-dim":"#b1c8ea","surface-tint":"#525f77","surface":"#f9f9ff","tertiary":"#000307","surface-container":"#e7eeff","error-container":"#ffdad6","inverse-on-surface":"#ecf1ff","on-secondary":"#ffffff","on-surface":"#0e1c2f","surface-bright":"#f9f9ff","on-secondary-container":"#4a607e","on-secondary-fixed-variant":"#314865","primary-fixed-dim":"#bac7e3","outline-variant":"#c5c6cd","surface-container-highest":"#d6e3fe","on-error":"#ffffff","on-primary-fixed":"#0f1c31","tertiary-container":"#141e27","on-tertiary-container":"#7b8691","outline":"#75777d","on-tertiary-fixed":"#121d25","on-surface-variant":"#44474d","surface-container-lowest":"#ffffff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","space-xl":"2.5rem","gutter-mobile":"0.75rem",margin:"3rem",gutter:"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","margin-mobile":"1rem"},fontFamily:{"headline-xl-mobile":["Manrope"],"headline-sm":["Manrope"],"headline-md":["Manrope"],"label-sm":["DM Sans"],"body-md":["DM Sans"],"title-lg":["Manrope"],"body-sm":["DM Sans"],"headline-xl":["Manrope"],"label-md":["DM Sans"],"headline-lg":["Manrope"],"body-lg":["DM Sans"],"title-md":["DM Sans"],"label-lg":["DM Sans"],"headline-lg-mobile":["Manrope"]},fontSize:{"headline-xl-mobile":["34px",{lineHeight:"42px",letterSpacing:"-0.015em",fontWeight:"800"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}],"title-lg":["18px",{lineHeight:"26px",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-xl":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-md mb-space-lg flex flex-col gap-1"><div class="flex items-center gap-space-sm"><img alt="SV Steel Centre Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xjg-hin8h_lIKlhJ-AM3ZtxdQEUJKXIsR6m26Yj747_XiYCoPac-RRLcTY9XRSxk_2jhOaLPrPRuPYslAIlnDKgwL3P7btWbspB-dZDix9ErSqmFTfnI0uOWgSfBn_5l_rnjDCbuLoPa04Bolzuzrob3Hgg6hwnWcF8dhxs7S5eUOsPnnMXDA5kSA_LIgtUAQJCN-3yyM7nSFG6cuQydzBctEMTIjmzCe6lNr3rxs"/><span class="font-title-lg text-title-lg text-primary uppercase font-bold tracking-tight">SV Steel</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Admin &amp; Yard Management</span></div><nav class="flex-1 px-space-sm flex flex-col gap-1 font-label-md text-label-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a aria-current="page" class="flex items-center px-space-md py-2.5 rounded-lg transition-all bg-primary-container text-on-primary font-bold" data-path="admin-portal" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">inventory_2</span>Stock &amp; Inventory</a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="admin-inquiries" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">request_quote</span>Quotations &amp; RFQs</a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="admin-rate-sheets" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">price_change</span>Daily Price Matrix</a><a class="flex items-center px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all mt-auto" data-path="home" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">storefront</span>Public Storefront</a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-lg bg-surface-container flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">admin_panel_settings</span></div><div class="flex flex-col"><span class="font-label-md text-label-md font-bold text-on-surface">Yard Admin</span><span class="font-label-sm text-label-sm text-on-surface-variant">Bhavanipuram Depot</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-on-secondary-fixed uppercase tracking-wider font-semibold">Commercial Terminal</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span><span>Yard Status: Open (Weighbridge Active)</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface w-full p-gutter min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Operational Yard Status Header & Session Context -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider px-2 py-0.5 rounded bg-primary text-on-primary font-bold">Terminal ID: BVP-01</span>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Live Mill Connect &amp; Weighbridge Linked</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">SV Steel Centre Management Portal — Bhavanipuram</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Logged in as Store Manager (Bhavanipuram Branch &amp; Yard) • Shift: Morning Batch A</p>
+</div>
+<!-- Quick Operational Action Shortcuts -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-2 px-space-md py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md rounded transition-all" onclick="downloadReportModal()">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Stock Report (PDF/XLS)</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md rounded transition-all" onclick="openBroadcastModal()">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+<span>WhatsApp Broadcast</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 bg-primary hover:bg-secondary text-on-primary font-label-md text-label-md rounded transition-all shadow-sm" onclick="triggerWeighbridgeSync()">
+<span class="material-symbols-outlined text-[18px]">scale</span>
+<span>Weighbridge Log</span>
+</button>
+</div>
+</div>
+<!-- Primary Metric Bar (Stock Balances, Rates, Pending Pipeline) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- Metric 1: CR Stock -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Active CR Sheet Stock</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">42.8 <span class="font-title-md text-title-md text-on-surface-variant">MT</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">layers</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low px-space-sm py-1.5 rounded flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">1,480 Sheets Ready</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">IS 513 Grade</span>
+</div>
+</div>
+<!-- Metric 2: GI Stock -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Active GI Sheet Stock</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">38.5 <span class="font-title-md text-title-md text-on-surface-variant">MT</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">shield</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low px-space-sm py-1.5 rounded flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">1,820 Sheets in Bay</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">IS 277 (120 GSM)</span>
+</div>
+</div>
+<!-- Metric 3: Today's Base Rates -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-tint"></div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Today's Benchmark Rates</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">CR ₹72.50</span>
+<span class="text-outline-variant font-body-sm">|</span>
+<span class="font-headline-sm text-headline-sm text-secondary">GI ₹82.00</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">currency_rupee</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low px-space-sm py-1.5 rounded flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Updated Today at 09:15 AM</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Auto-Sync ON</span>
+</div>
+</div>
+<!-- Metric 4: Customer RFQs Pipeline -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Pending Customer RFQs</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">14 <span class="font-title-md text-title-md text-on-surface-variant">Enquiries</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">markdown_copy</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low px-space-sm py-1.5 rounded flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">8 Wholesale</span>
+<span class="font-label-md text-label-md text-on-surface-variant">6 Fabrication Retail</span>
+</div>
+</div>
+</div>
+<!-- Real-Time Yard Rate Controller & Physical Dispatch Broadcast Split -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
+<!-- FAST PRICE UPDATE MODULE (8 cols) -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Rapid Daily Price Matrix Controller</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Publish instant price-per-kilogram changes directly to quotation terminals &amp; public price boards.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container text-on-surface font-bold tracking-wide">Ex-Depot Vijayawada</span>
+</div>
+<!-- Editable Price Rows -->
+<div class="flex flex-col gap-2.5 mt-2">
+<!-- Row 1: JSW CR Sheets -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm bg-surface-container-low rounded-lg gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-7 rounded-sm bg-primary"></div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">JSW Steel — CR Sheets</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Cold Rolled Commercial IS 513 CRCA</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">₹</span>
+<input class="w-24 text-right bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded px-2 py-1 font-mono focus:outline-none focus:bg-surface-variant shadow-inner" id="rate-jsw-cr" step="0.25" type="number" value="72.50"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">/kg</span>
+<button class="ml-2 px-3 py-1.5 bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase font-bold rounded transition-all" onclick="flashPriceNotice('JSW CR Sheets', 'rate-jsw-cr')">Update</button>
+</div>
+</div>
+<!-- Row 2: Tata Steel CR -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm bg-surface-container-low rounded-lg gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-7 rounded-sm bg-primary"></div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Tata Steel — CR Sheets</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Steelium Prime Cold Rolled Deep Drawing</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">₹</span>
+<input class="w-24 text-right bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded px-2 py-1 font-mono focus:outline-none focus:bg-surface-variant shadow-inner" id="rate-tata-cr" step="0.25" type="number" value="74.00"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">/kg</span>
+<button class="ml-2 px-3 py-1.5 bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase font-bold rounded transition-all" onclick="flashPriceNotice('Tata Steel CR', 'rate-tata-cr')">Update</button>
+</div>
+</div>
+<!-- Row 3: Jindal CR -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm bg-surface-container-low rounded-lg gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-7 rounded-sm bg-primary"></div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Jindal Steel — CR Sheets</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Jindal Prime CR Slit &amp; Coils cut-to-length</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">₹</span>
+<input class="w-24 text-right bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded px-2 py-1 font-mono focus:outline-none focus:bg-surface-variant shadow-inner" id="rate-jindal-cr" step="0.25" type="number" value="71.50"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">/kg</span>
+<button class="ml-2 px-3 py-1.5 bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase font-bold rounded transition-all" onclick="flashPriceNotice('Jindal CR Sheets', 'rate-jindal-cr')">Update</button>
+</div>
+</div>
+<!-- Row 4: JSW Vishwas GI -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm bg-surface-container-low rounded-lg gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-7 rounded-sm bg-secondary"></div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">JSW Vishwas — GI Sheets</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Galvanized Plain (GP) 120 GSM Zinc coating</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">₹</span>
+<input class="w-24 text-right bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded px-2 py-1 font-mono focus:outline-none focus:bg-surface-variant shadow-inner" id="rate-jsw-gi" step="0.25" type="number" value="82.00"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">/kg</span>
+<button class="ml-2 px-3 py-1.5 bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase font-bold rounded transition-all" onclick="flashPriceNotice('JSW Vishwas GI', 'rate-jsw-gi')">Update</button>
+</div>
+</div>
+<!-- Row 5: Tata Shaktee GI -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm bg-surface-container-low rounded-lg gap-3">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-7 rounded-sm bg-secondary"></div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Tata Shaktee — GI Sheets</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Heavy Zinc Coated GP Corrugated/Plain</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">₹</span>
+<input class="w-24 text-right bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded px-2 py-1 font-mono focus:outline-none focus:bg-surface-variant shadow-inner" id="rate-tata-gi" step="0.25" type="number" value="85.00"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-semibold">/kg</span>
+<button class="ml-2 px-3 py-1.5 bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm uppercase font-bold rounded transition-all" onclick="flashPriceNotice('Tata Shaktee GI', 'rate-tata-gi')">Update</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Footer with Timestamp and Publish Trigger -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">history</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last Published: <strong class="text-on-surface" id="publish-timestamp">Today, 09:15 AM IST</strong> (Logged by: Srikanth V.)</span>
+</div>
+<button class="px-space-md py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg font-bold rounded shadow-md flex items-center justify-center gap-2 transition-all" id="btn-publish-rates" onclick="publishDailyRates()">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Publish Daily Rates to Website</span>
+</button>
+</div>
+</div>
+<!-- YARD AUDIT & WEIGHBRIDGE FEED (4 cols) -->
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Yard Weighbridge Stream</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">Bay 2 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time tare &amp; gross metric reading connected to Avery India digital bridge.</p>
+<!-- Weighbridge Mock Visual Widget -->
+<div class="bg-primary-container text-on-primary p-space-md rounded-xl mt-2 relative overflow-hidden">
+<div class="flex justify-between items-center text-on-primary-container font-label-sm text-label-sm">
+<span>TERMINAL WEIGH-HEAD #02</span>
+<span class="text-secondary-fixed-dim">TARE ZEROED</span>
+</div>
+<div class="mt-2 flex items-baseline justify-between font-mono">
+<span class="font-headline-xl text-headline-xl text-on-primary font-bold tracking-tight">18,460</span>
+<span class="font-title-lg text-title-lg text-on-primary-container">KG GROSS</span>
+</div>
+<div class="mt-2 flex items-center justify-between text-on-primary-container font-body-sm text-body-sm pt-2 bg-black/20 px-2 py-1 rounded">
+<span>Vehicle: AP 16 TH 4419 (Tata 407)</span>
+<span class="text-on-primary font-bold">Net: 4.82 MT</span>
+</div>
+</div>
+<!-- Price Change Audit Mini-Log -->
+<div class="mt-3 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Price Audit Trail</span>
+<div class="flex flex-col gap-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between p-2 bg-surface-container-low rounded">
+<span class="font-semibold text-on-surface">Tata Shaktee GI</span>
+<span class="font-mono text-on-surface-variant">+₹0.50 (₹85.00)</span>
+<span class="text-on-surface-variant text-[11px]">09:15 AM</span>
+</div>
+<div class="flex items-center justify-between p-2 bg-surface-container-low rounded">
+<span class="font-semibold text-on-surface">JSW CR Sheet</span>
+<span class="font-mono text-on-surface-variant">-₹0.25 (₹72.50)</span>
+<span class="text-on-surface-variant text-[11px]">08:45 AM</span>
+</div>
+<div class="flex items-center justify-between p-2 bg-surface-container-low rounded">
+<span class="font-semibold text-on-surface">Jindal CR Sheet</span>
+<span class="font-mono text-on-surface-variant">Unchanged (₹71.50)</span>
+<span class="text-on-surface-variant text-[11px]">Yesterday</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="w-full py-2 bg-surface-container text-on-surface font-label-md text-label-md rounded flex items-center justify-center gap-2 hover:bg-surface-variant transition-all font-semibold" href="#rfq-section">
+<span>Review 14 Customer RFQs Below</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- RECENT CUSTOMER ENQUIRIES TABLE (B2B Quotation Management) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md" id="rfq-section">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">inbox</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Recent Customer Enquiries &amp; Quotations</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Incoming lead pipeline from Vijayawada fabricators, Autonagar industrial units &amp; regional dealers.</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex bg-surface-container rounded p-0.5">
+<button class="px-3 py-1 font-label-sm text-label-sm font-bold bg-surface-container-lowest text-on-surface rounded shadow-xs">All (14)</button>
+<button class="px-3 py-1 font-label-sm text-label-sm font-bold text-on-surface-variant hover:text-on-surface">Wholesale (8)</button>
+<button class="px-3 py-1 font-label-sm text-label-sm font-bold text-on-surface-variant hover:text-on-surface">Retail (6)</button>
+</div>
+<button class="px-3 py-1.5 bg-surface-container text-on-surface font-label-sm text-label-sm font-bold rounded hover:bg-surface-variant transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_list</span> Filter
+        </button>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Date/Time</th>
+<th class="py-3 px-4 font-semibold">Customer / Enterprise</th>
+<th class="py-3 px-4 font-semibold">Contact</th>
+<th class="py-3 px-4 font-semibold">Type</th>
+<th class="py-3 px-4 font-semibold">Product Requested</th>
+<th class="py-3 px-4 text-right font-semibold">Qty</th>
+<th class="py-3 px-4 text-right font-semibold">Est. Weight</th>
+<th class="py-3 px-4 font-semibold">Status</th>
+<th class="py-3 px-4 text-center font-semibold">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm">
+<!-- Enquiry Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4 font-mono text-[12px] text-on-surface-variant whitespace-nowrap">Today, 11:20 AM</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">Sri Rama Fabrication Works</span>
+<span class="text-on-surface-variant text-[12px]">Autonagar, Gate #4</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-[13px]">+91 98480 23145</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container text-on-primary font-bold">Wholesale</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">CR Sheet 1.20mm (JSW)</span>
+<span class="text-on-surface-variant text-[12px]">4 x 8 ft (1220 x 2440 mm)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold">120 Sheets</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-primary">3,360 kg</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> New Lead
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<a class="p-1.5 rounded bg-surface-container hover:bg-surface-variant text-on-surface text-sm flex items-center justify-center" href="https://wa.me/919848023145?text=Hello%20Sri%20Rama%20Fabrication,%20SV%20Steel%20Centre%20quotation%20for%20120%20sheets%20CR%201.2mm..." target="_blank" title="Send WhatsApp Quote">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-1.5 rounded bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface text-sm flex items-center justify-center" onclick="markStatusDone(this)" title="Mark Done">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Enquiry Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/40">
+<td class="py-3.5 px-4 font-mono text-[12px] text-on-surface-variant whitespace-nowrap">Today, 10:45 AM</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">Kranthi Agro Equipments</span>
+<span class="text-on-surface-variant text-[12px]">Kankipadu Road</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-[13px]">+91 94401 88762</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container text-on-primary font-bold">Wholesale</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">GI Sheet 0.80mm (JSW Vishwas)</span>
+<span class="text-on-surface-variant text-[12px]">3 x 8 ft (914 x 2440 mm)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold">250 Sheets</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-primary">3,575 kg</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span> Quoted
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<a class="p-1.5 rounded bg-surface-container hover:bg-surface-variant text-on-surface text-sm flex items-center justify-center" href="https://wa.me/919440188762" target="_blank" title="Send WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-1.5 rounded bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface text-sm flex items-center justify-center" onclick="markStatusDone(this)" title="Mark Done">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Enquiry Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4 font-mono text-[12px] text-on-surface-variant whitespace-nowrap">Today, 09:50 AM</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">Muralikrishna Electrical Panels</span>
+<span class="text-on-surface-variant text-[12px]">Bhavanipuram Industrial Colony</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-[13px]">+91 93933 11200</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-bold">Retail</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">CR Sheet 1.60mm (Tata Steelium)</span>
+<span class="text-on-surface-variant text-[12px]">4 x 8 ft (1220 x 2440 mm)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold">35 Sheets</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-primary">1,310 kg</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-variant text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Contacted
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<a class="p-1.5 rounded bg-surface-container hover:bg-surface-variant text-on-surface text-sm flex items-center justify-center" href="https://wa.me/919393311200" target="_blank" title="Send WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-1.5 rounded bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface text-sm flex items-center justify-center" onclick="markStatusDone(this)" title="Mark Done">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Enquiry Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/40">
+<td class="py-3.5 px-4 font-mono text-[12px] text-on-surface-variant whitespace-nowrap">Yesterday, 05:10 PM</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">Durga Bhavani Roofing &amp; Trusses</span>
+<span class="text-on-surface-variant text-[12px]">Gollapudi Bypass</span>
+</td>
+<td class="py-3.5 px-4 font-mono text-[13px]">+91 97011 54432</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container text-on-primary font-bold">Wholesale</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">GI Sheet 0.60mm (Tata Shaktee)</span>
+<span class="text-on-surface-variant text-[12px]">3 x 10 ft Corrugated</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold">180 Sheets</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-primary">2,100 kg</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-inverse-primary"></span> Dispatched
+              </span>
+</td>
+<td class="py-3.5 px-4 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<a class="p-1.5 rounded bg-surface-container hover:bg-surface-variant text-on-surface text-sm flex items-center justify-center" href="https://wa.me/919701154432" target="_blank" title="Send WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-1.5 rounded bg-primary text-on-primary text-sm flex items-center justify-center opacity-60 cursor-default" onclick="markStatusDone(this)" title="Already Dispatched">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Enquiry Pagination / Footer Note -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing latest 4 of 14 RFQs in current queue. 10 older entries archived to ERP.</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold hover:bg-surface-variant">Previous</button>
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold">Next</button>
+</div>
+</div>
+</div>
+<!-- PRODUCT INVENTORY & SPECIFICATION MANAGER -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">inventory</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Product Inventory &amp; Specification Manager</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live stock bay allocation, gauge tolerances, unit sheet weights, and critical low-stock thresholds.</p>
+</div>
+<!-- Add New Stock Modal Button -->
+<button class="px-space-md py-2 bg-primary hover:bg-secondary text-on-primary font-label-md text-label-md font-bold rounded flex items-center gap-2 transition-all shadow-sm" onclick="toggleAddStockModal()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Add New Stock / Size</span>
+</button>
+</div>
+<!-- Stock Specification Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Gauge (mm)</th>
+<th class="py-3 px-4 font-semibold">Dimensions (ft &amp; mm)</th>
+<th class="py-3 px-4 font-semibold">Steel Type &amp; Brand</th>
+<th class="py-3 px-4 font-semibold">Standard</th>
+<th class="py-3 px-4 text-right font-semibold">Unit Wt (kg/sheet)</th>
+<th class="py-3 px-4 text-right font-semibold">Current Sheets</th>
+<th class="py-3 px-4 text-right font-semibold">Total Stock</th>
+<th class="py-3 px-4 text-center font-semibold">Status / Alert</th>
+<th class="py-3 px-4 text-right font-semibold">Quick Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface" id="inventory-table-body">
+<!-- SKU 1 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">0.50 mm</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">3 ft × 8 ft</span>
+<span class="text-on-surface-variant font-mono text-[12px]">914 × 2440 mm</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">Tata Shaktee GI</span>
+<span class="text-on-surface-variant text-[12px]">Galvanized Plain</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">IS 277 120 GSM</span>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">8.76 kg</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-on-surface">420</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-secondary">3.68 MT</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Optimal
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 bg-surface-container hover:bg-surface-variant text-on-surface font-label-sm text-label-sm rounded font-semibold" onclick="editSku(this)">Adjust</button>
+</td>
+</tr>
+<!-- SKU 2 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/40">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">0.80 mm</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">4 ft × 8 ft</span>
+<span class="text-on-surface-variant font-mono text-[12px]">1220 × 2440 mm</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">JSW Vishwas GI</span>
+<span class="text-on-surface-variant text-[12px]">Galvanized Plain Prime</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">IS 277 120 GSM</span>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">18.70 kg</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-on-surface">650</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-secondary">12.15 MT</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Optimal
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 bg-surface-container hover:bg-surface-variant text-on-surface font-label-sm text-label-sm rounded font-semibold" onclick="editSku(this)">Adjust</button>
+</td>
+</tr>
+<!-- SKU 3 (LOW STOCK ALERT) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/20">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">1.20 mm</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">4 ft × 8 ft</span>
+<span class="text-on-surface-variant font-mono text-[12px]">1220 × 2440 mm</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">JSW Steel CR</span>
+<span class="text-on-surface-variant text-[12px]">Cold Rolled Close Annealed</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">IS 513 CRCA O</span>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">28.00 kg</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-error">42</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-error">1.17 MT</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">warning</span> Low Stock Alert
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 bg-error text-on-error font-label-sm text-label-sm rounded font-bold shadow-xs" onclick="orderReorderModal('JSW Steel CR 1.20mm')">Indent Mill</button>
+</td>
+</tr>
+<!-- SKU 4 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">1.60 mm</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">4 ft × 8 ft</span>
+<span class="text-on-surface-variant font-mono text-[12px]">1220 × 2440 mm</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">Tata Steelium CR</span>
+<span class="text-on-surface-variant text-[12px]">Cold Rolled Prime D-Grade</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">IS 513 CRCA D</span>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">37.40 kg</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-on-surface">310</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-secondary">11.59 MT</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Optimal
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 bg-surface-container hover:bg-surface-variant text-on-surface font-label-sm text-label-sm rounded font-semibold" onclick="editSku(this)">Adjust</button>
+</td>
+</tr>
+<!-- SKU 5 -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/40">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">2.00 mm</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">4 ft × 8 ft</span>
+<span class="text-on-surface-variant font-mono text-[12px]">1220 × 2440 mm</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-bold text-on-surface block">Jindal Steel CR</span>
+<span class="text-on-surface-variant text-[12px]">CR Slit Cut-to-length</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">IS 513 CRCA O</span>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">46.70 kg</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-on-surface">220</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-secondary">10.27 MT</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Optimal
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 bg-surface-container hover:bg-surface-variant text-on-surface font-label-sm text-label-sm rounded font-semibold" onclick="editSku(this)">Adjust</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Depot Capacity Utilization Visual -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">warehouse</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Bhavanipuram Warehouse Bay Capacity: 81.3 / 120.0 MT</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Gantry Crane #1 (10-Ton) &amp; Slitter Bay operational.</span>
+</div>
+</div>
+<div class="w-full md:w-64 flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant font-bold">
+<span>BAY UTILIZATION</span>
+<span>67.8%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary" style="width: 67.8%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- POPUP / MODAL: ADD NEW STOCK SIZE -->
+<div class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4" id="add-stock-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex justify-between items-center pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">add_box</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Add New Steel Size / SKU</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="toggleAddStockModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-sm font-body-sm text-body-sm" id="add-sku-form" onsubmit="handleAddNewSku(event)">
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Thickness (mm)</label>
+<input class="w-full bg-surface-container-low text-on-surface rounded p-2 text-sm focus:outline-none focus:bg-surface-variant" id="new-thickness" placeholder="e.g. 1.00" required="" step="0.05" type="number"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Dimensions (ft)</label>
+<input class="w-full bg-surface-container-low text-on-surface rounded p-2 text-sm focus:outline-none focus:bg-surface-variant" id="new-dim-ft" placeholder="e.g. 4 x 8 ft" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Brand &amp; Material</label>
+<select class="w-full bg-surface-container-low text-on-surface rounded p-2 text-sm focus:outline-none focus:bg-surface-variant" id="new-brand">
+<option value="JSW CR Sheets">JSW CR Sheets</option>
+<option value="Tata Steelium CR">Tata Steelium CR</option>
+<option value="Jindal CR Sheets">Jindal CR Sheets</option>
+<option value="JSW Vishwas GI">JSW Vishwas GI</option>
+<option value="Tata Shaktee GI">Tata Shaktee GI</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Specification Standard</label>
+<input class="w-full bg-surface-container-low text-on-surface rounded p-2 text-sm focus:outline-none focus:bg-surface-variant" id="new-standard" placeholder="e.g. IS 513 CRCA" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Initial Sheet Count</label>
+<input class="w-full bg-surface-container-low text-on-surface rounded p-2 text-sm focus:outline-none focus:bg-surface-variant" id="new-count" placeholder="e.g. 100" required="" type="number"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Unit Weight (kg/sheet)</label>
+<input class="w-full bg-surface-container-low text-on-surface rounded p-2 text-sm focus:outline-none focus:bg-surface-variant" id="new-weight" placeholder="e.g. 23.4" required="" step="0.1" type="number"/>
+</div>
+</div>
+<div class="flex justify-end gap-2 pt-2">
+<button class="px-space-md py-2 bg-surface-container text-on-surface font-label-md text-label-md rounded font-semibold" onclick="toggleAddStockModal()" type="button">Cancel</button>
+<button class="px-space-md py-2 bg-primary hover:bg-secondary text-on-primary font-label-md text-label-md rounded font-bold" type="submit">Register Stock Item</button>
+</div>
+</form>
+</div>
+</div>
+<!-- INTERACTIVE TOAST NOTIFICATION CONTAINER -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-primary text-on-primary px-5 py-3 rounded-lg shadow-xl font-label-md text-label-md" id="toast-notification">
+<span class="material-symbols-outlined text-[20px] text-inverse-primary" id="toast-icon">check_circle</span>
+<span id="toast-message">Action processed successfully</span>
+</div>
+</div>
+<!-- SCRIPT: Admin Console Logic & Micro-Interactions -->
+<script>
+  function showToast(msg, icon = 'check_circle') {
+    const toast = document.getElementById('toast-notification');
+    const toastMsg = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+    
+    toastMsg.textContent = msg;
+    toastIcon.textContent = icon;
+    
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  function flashPriceNotice(brandName, inputId) {
+    const val = document.getElementById(inputId).value;
+    showToast(`Updated ${brandName} benchmark rate to ₹${val}/kg`);
+  }
+
+  function publishDailyRates() {
+    const btn = document.getElementById('btn-publish-rates');
+    const originalText = btn.innerHTML;
+    
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Publishing Live...`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      document.getElementById('publish-timestamp').textContent = `Today, ${timeStr} IST`;
+      
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+      showToast('Daily Rates Published! Public price matrix & WhatsApp bot synced.', 'public');
+    }, 850);
+  }
+
+  function toggleAddStockModal() {
+    const modal = document.getElementById('add-stock-modal');
+    modal.classList.toggle('hidden');
+  }
+
+  function handleAddNewSku(e) {
+    e.preventDefault();
+    const thk = document.getElementById('new-thickness').value;
+    const dim = document.getElementById('new-dim-ft').value;
+    const brand = document.getElementById('new-brand').value;
+    const std = document.getElementById('new-standard').value;
+    const count = parseInt(document.getElementById('new-count').value);
+    const unitWt = parseFloat(document.getElementById('new-weight').value);
+    const totalMt = ((count * unitWt) / 1000).toFixed(2);
+
+    const tbody = document.getElementById('inventory-table-body');
+    const tr = document.createElement('tr');
+    tr.className = 'hover:bg-surface-container-low transition-colors bg-surface-container-lowest animate-fadeIn';
+    tr.innerHTML = `
+      <td class="py-3.5 px-4 font-mono font-bold text-on-surface">${parseFloat(thk).toFixed(2)} mm</td>
+      <td class="py-3.5 px-4">
+        <span class="font-bold text-on-surface block">${dim}</span>
+        <span class="text-on-surface-variant font-mono text-[12px]">Standard Cut</span>
+      </td>
+      <td class="py-3.5 px-4">
+        <span class="font-bold text-on-surface block">${brand}</span>
+        <span class="text-on-surface-variant text-[12px]">Cold/Galvanized Product</span>
+      </td>
+      <td class="py-3.5 px-4">
+        <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">${std}</span>
+      </td>
+      <td class="py-3.5 px-4 text-right font-mono">${unitWt.toFixed(2)} kg</td>
+      <td class="py-3.5 px-4 text-right font-mono font-bold text-on-surface">${count}</td>
+      <td class="py-3.5 px-4 text-right font-mono font-bold text-secondary">${totalMt} MT</td>
+      <td class="py-3.5 px-4 text-center">
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Optimal
+        </span>
+      </td>
+      <td class="py-3.5 px-4 text-right">
+        <button onclick="editSku(this)" class="px-2.5 py-1 bg-surface-container hover:bg-surface-variant text-on-surface font-label-sm text-label-sm rounded font-semibold">Adjust</button>
+      </td>
+    `;
+
+    tbody.prepend(tr);
+    toggleAddStockModal();
+    document.getElementById('add-sku-form').reset();
+    showToast(`Added ${count} sheets (${thk}mm ${brand}) to active yard inventory.`);
+  }
+
+  function markStatusDone(btn) {
+    const parentRow = btn.closest('tr');
+    const statusCol = parentRow.querySelector('td:nth-child(8)');
+    statusCol.innerHTML = `
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+        <span class="material-symbols-outlined text-[13px] text-secondary">task_alt</span> Done
+      </span>
+    `;
+    btn.classList.add('opacity-40', 'cursor-default');
+    btn.disabled = true;
+    showToast('Enquiry flagged as processed.');
+  }
+
+  function downloadReportModal() {
+    showToast('Compiling Bhavanipuram Daily Stock Excel/PDF...', 'file_download');
+    setTimeout(() => {
+      showToast('Daily Stock Ledger downloaded (BVP-Stock-Report.xlsx)', 'download_done');
+    }, 1500);
+  }
+
+  function openBroadcastModal() {
+    const rateCR = document.getElementById('rate-jsw-cr').value;
+    const rateGI = document.getElementById('rate-jsw-gi').value;
+    showToast(`Broadcast queued to 184 registered Vijayawada fabricators (CR: ₹${rateCR}, GI: ₹${rateGI})`, 'forward_to_inbox');
+  }
+
+  function triggerWeighbridgeSync() {
+    showToast('Connecting to Avery India digital bridge (Port COM4)...', 'sync');
+    setTimeout(() => {
+      showToast('Weighbridge recalibrated. Tare auto-verified.', 'done_all');
+    }, 1200);
+  }
+
+  function editSku(btn) {
+    const row = btn.closest('tr');
+    const currentSheets = row.querySelector('td:nth-child(6)').textContent.trim();
+    const updated = prompt('Enter revised physical count for sheet SKU:', currentSheets);
+    if (updated !== null && updated !== '') {
+      const parsed = parseInt(updated);
+      if (!isNaN(parsed)) {
+        row.querySelector('td:nth-child(6)').textContent = parsed;
+        const unitWt = parseFloat(row.querySelector('td:nth-child(5)').textContent);
+        row.querySelector('td:nth-child(7)').textContent = ((parsed * unitWt) / 1000).toFixed(2) + ' MT';
+        showToast('Depot count updated.');
+      }
+    }
+  }
+
+  function orderReorderModal(skuName) {
+    showToast(`Dispatching Mill Purchase Indent for: ${skuName}`, 'local_shipping');
+  }
+</script></main></div></body></html>
